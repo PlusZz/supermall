@@ -8,10 +8,12 @@
           <i class="arrow-right"></i>
         </div>
       </div>
+
       <div class="info-user">
         <img :src="commentInfo.user.avatar" alt="">
         <span>{{commentInfo.user.uname}}</span>
       </div>
+
       <div class="info-detail">
         <p>{{commentInfo.content}}</p>
         <div class="info-other">
@@ -22,6 +24,7 @@
           <img :src="item" v-for="(item, index) in commentInfo.images">
         </div>
       </div>
+
     </div>
   </div>
 </template>

@@ -145,10 +145,8 @@
         //2.请求商品数据
         const page = this.goods[type].page + 1
         getHomeGoods(type, page).then(res => {
-          console.log(res);
           this.goods[type].list.push(...res.data.list)
           this.goods[type].page += 1
-
           //完成上拉加載更多
           this.$refs.scroll.finishPullUp()
         })
